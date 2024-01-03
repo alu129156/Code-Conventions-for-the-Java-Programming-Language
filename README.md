@@ -73,63 +73,63 @@ The objective of this project is to create a concise, easy-to-follow Java Code C
   
     - 3.5.1 Ensure that the code must be interpreted in a clear and easy way for all the developers.
 
-* 4.Consistency
+- [4. Consistency](#4-consistency)
 
-  * 4.1 Naming Conventions
+  - [4.1 Naming Conventions](#41-naming-conventions)
   
-    * 4.1.1 Use consistent naming conventions throughout the code.
+    - 4.1.1 Use consistent naming conventions throughout the code.
     
-  * 4.2 Indentation
+  - [4.2 Indentation](#42-indentation)
   
-    * 4.2.1 Use consistent indentation throughout the code.
+    - 4.2.1 Use consistent indentation throughout the code.
     
-  * 4.3 Comments
+  - [4.3 Comments](#43-comments)
   
-    * 4.3.1 Use comments to explain the purpose of the code.
-    * 4.3.2 Use Javadoc comments to document classes, methods, and interfaces.
+    - 4.3.1 Use comments to explain the purpose of the code.
+    - 4.3.2 Use Javadoc comments to document classes, methods, and interfaces.
     
-  * 4.4 Declarations
+  - [4.4 Declarations](#44-declarations)
   
-    * 4.4.1 Declare variables with the appropriate data type.
-    * 4.4.2 Use meaningful names for variables.
+    - 4.4.1 Declare variables with the appropriate data type.
+    - 4.4.2 Use meaningful names for variables.
     
-  * 4.5 Tasks
+  - [4.5 Tasks](#45-tasks)
   
-    * 4.5.1 Ensure that all the variables, methods and classes are consistent and do not give contradictions in the different parts of the code.
+    - 4.5.1 Ensure that all the variables, methods and classes are consistent and do not give contradictions in the different parts of the code.
 
-* 5. Java classes
+- [5. Java classes](#5-java-classes)
    
-  * 5.1 Threads
+  - [5.1 Threads](#51-threads)
   
-    * 5.1.1 Use multithreading for asynchronous and costly tasks like I/O or Database connections.
+    - 5.1.1 Use multithreading for asynchronous and costly tasks like I/O or Database connections.
     
-  * 5.2 Collection
+  - [5.2 Collection](#52-collection)
   
-    * 5.2.1 Use sets, ArrayLists and Hash Maps to have more optimized and clean code.
+    - 5.2.1 Use sets, ArrayLists and Hash Maps to have more optimized and clean code.
     
-  * 5.3 Sorting Algorithms
+  - [5.3 Sorting Algorithms](#53-sorting-algorithms)
   
-    * 5.3.1 Use the java sorting algorithm library to reduce the code complexity.
+    - 5.3.1 Use the java sorting algorithm library to reduce the code complexity.
     
-  * 5.4 Exception
+  - [5.4 Exception](#54-exception)
   
-    * 5.4.1 Include exceptions in the code (also create own exceptions), to manage them properly in each class to identify easier the compilation errors.
+    - 5.4.1 Include exceptions in the code (also create own exceptions), to manage them properly in each class to identify easier the compilation errors.
     
-  * 5.5 Paths
+  - [5.5 Paths](#55-paths)
   
-    * 5.5.1 Use the path class to have an optimal and automatised access for OS tasks in the code.
+    - 5.5.1 Use the path class to have an optimal and automatised access for OS tasks in the code.
 
-* 6.Code Checking Process
+- [6. Code Checking Process](#6-code-checking-process)
 
-  * 6.1 JUnit test
+  - [6.1 JUnit test](#61-junit-test)
   
-    * 6.1.1 After creating a method, validate it with a JUnit test.
+    - 6.1.1 After creating a method, validate it with a JUnit test.
     
-  * 6.2 Full class test
+  - [6.2 Full class test](#62-full-class-test)
   
-    * 6.2.2 After finishing a class, validate it with at least ten different scenarios.
+    - 6.2.2 After finishing a class, validate it with at least ten different scenarios.
 
-* 7.References
+- [7. References](#7-references)
 
 # 1.Introduction
 
