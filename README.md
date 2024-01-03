@@ -149,59 +149,160 @@ The objective of this project is to create a concise, easy-to-follow Java Code C
 ### 1.3.4 Declarations: Statements that define variables, methods, and classes.
 ### 1.3.5 Tasks: Actions or goals that must be performed.
 
-# 2. Coding Practices
+# 2 Coding Practices
+## 2.1. Naming Conventions
+### 2.1.1 Use descriptive and meaningful names
+- **Correct**: `int employeeCount;`
+- **Incorrect**: `int ec;`
 
-## 2.1 Naming Conventions
-  
-### 2.1.1 Use descriptive names for variables, methods, classes, and packages.
-### 2.1.2 Follow the camelCase naming convention for variables and methods.
-### 2.1.3 Follow the PascalCase naming convention for classes and interfaces.
-### 2.1.4 Use all caps for constants.
-    
-## 2.2 Indentation
-  
-### 2.2.1 Use 4 spaces for indentation.
-### 2.2.2 Do not use tabs for indentation.
-    
-## 2.3 Comments
-  
-### 2.3.1 Use comments to explain the purpose of the code.
-### 2.3.2 Use Javadoc comments to document classes, methods, and interfaces.
-    
-## 2.4 Declarations
-  
-### 2.4.1 Declare variables at the beginning of the block.
-### 2.4.2 Declare one variable per line.
-    
-## 2.5 Tasks
-  
-### 2.5.1 Data must be encapsulated in the properly classes. All attributes must be private, and it is needed getters and setters.
-### 2.5.2 Correct use of error handling, using Java exceptions.
+### 2.1.2 Follow camelCase for variables and methods
+- **Correct**: `void calculateSalary() { ... }`
+- **Incorrect**: `void CalculateSalary() { ... }`
 
-# 3. Readability
+### 2.1.3 Follow PascalCase for classes and interfaces
+- **Correct**: `class EmployeeManager { ... }`
+- **Incorrect**: `class employeemanager { ... }`
 
-## 3.1 Naming Conventions
-  
-### 3.1.1 Use meaningful names for variables, methods, classes, and packages.
-### 3.1.2 Avoid using abbreviations or acronyms.
-    
-## 3.2 Indentation
-  
-### 3.2.1 Use consistent indentation throughout the code.
-    
-## 3.3 Comments
-  
-### 3.3.1 Use comments to explain the purpose of the code.
-### 3.3.2 Use Javadoc comments to document classes, methods, and interfaces.
-    
-## 3.4 Declarations
-  
-### 3.4.1 Declare variables with the appropriate data type.
-### 3.4.2 Use meaningful names for variables.
-    
-## 3.5 Tasks
-  
-### 3.5.1 Ensure that the code must be interpreted in a clear and easy way for all the developers.
+### 2.1.4 Use all caps for constants
+- **Correct**: `static final int MAX_SIZE = 100;`
+- **Incorrect**: `static final int MaxSize = 100;`
+
+#### 2.1.5 Avoid abbreviations or acronyms
+- **Correct**: `int numberOfPages;`
+- **Incorrect**: `int numPgs;`
+
+## 2.2. Indentation
+
+### 2.2.1 Use 4 spaces for indentation
+- **Correct**:
+  ```java
+  if (x == 1) {
+      y = 2;
+  }
+  ```
+- **Incorrect** (using 2 spaces):
+  ```java
+  if (x == 1) {
+    y = 2;
+  }
+  ```
+
+### 2.2.2 Use consistent indentation
+- **Correct**:
+  ```java
+  if (condition) {
+      // code
+  }
+  ```
+- **Incorrect** (inconsistent indentation):
+  ```java
+  if (condition) {
+  // code
+  }
+  ```
+
+### 2.2.3 Do not use tabs for indentation
+- **Correct**: (Uses spaces)
+- **Incorrect**: (Uses tabs)
+
+## 2.3. Comments
+
+### 2.3.1 Use comments to explain purpose
+- **Correct**:
+  ```java
+  // Calculate the yearly salary
+  salary = hoursWorked * hourlyRate;
+  ```
+- **Incorrect**: (No comment explaining code)
+
+### 2.3.2 Use Javadoc comments for documentation
+- **Correct**:
+  ```java
+  /**
+   * Represents an employee in the company.
+   */
+  public class Employee { ... }
+  ```
+- **Incorrect**: (No Javadoc comment)
+
+## 2.4. Declarations
+
+### 2.4.1 Declare variables at the beginning
+- **Correct**:
+  ```java
+  void someMethod() {
+      int result;
+      // code
+  }
+  ```
+- **Incorrect**:
+  ```java
+  void someMethod() {
+      // code
+      int result;
+  }
+  ```
+
+### 2.4.2 Declare one variable per line
+- **Correct**:
+  ```java
+  int count;
+  int size;
+  ```
+- **Incorrect**:
+  ```java
+  int count, size;
+  ```
+
+### 2.4.3 Declare variables with appropriate data type
+- **Correct**: `String name = "John";`
+- **Incorrect**: `int name = "John";`
+
+## 2.5. Data Encapsulation and Error Handling
+
+### 2.5.1 Encapsulate data in classes
+- **Correct**:
+  ```java
+  public class Employee {
+      private String name;
+
+      public String getName() {
+          return name;
+      }
+
+      public void setName(String name) {
+          this.name = name;
+      }
+  }
+  ```
+- **Incorrect**:
+  ```java
+  public class Employee {
+      public String name;
+  }
+  ```
+
+### 2.5.2 Use Java exceptions for error handling
+- **Correct**:
+  ```java
+  try {
+      // code that may throw an exception
+  } catch (Exception e) {
+      // handle exception
+  }
+  ```
+- **Incorrect**:
+  ```java
+  // code that may throw an exception
+  // No exception handling
+  ```
+
+## 2.6. Readability and Clarity
+
+### 2.6.1 Ensure clear and interpretable code
+- **Correct**: Code with proper naming, indentation, comments, and clear logic.
+- **Incorrect**: Code that is hard to read due to lack of comments, poor naming, inconsistent indentation, and convoluted logic.
+
 
 # 4. Consistency
 
