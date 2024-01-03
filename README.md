@@ -1,25 +1,25 @@
 # Code-Conventions-for-the-Java-Programming-Language
-Create a concise, easy-to-follow Java Code Conventions guide to standardize coding practices, enhance readability, and improve collaboration among Java developers.
+The objective of this project is to create a concise, easy-to-follow Java Code Conventions guide to standardise coding practices, enhance readability, and improve collaboration among Java developers.
 
-* 1.Introduction
+- [1.Introduction](#1-introduction)
 
-  * 1.1 Purpose
+  - [1.1 Purpose](#11-purpose)
   
-    * 1.1.1 The purpose of this guide is to standardize coding practices, enhance readability, and improve collaboration among Java developers.
+    - 1.1.1 The purpose of this guide is to standardize coding practices, enhance readability, and improve collaboration among Java developers.
     
-  * 1.2 Scope
+  - [1.2 Scope](#12-scope)
   
-    * 1.2.1 This guide applies to all Java code written by the development team.
+    - 1.2.1 This guide applies to all Java code written by the development team.
     
-  * 1.3 Definitions
+  - [1.3 Definitions](#13-definitions)
   
-    * 1.3.1 Naming conventions: A set of rules for choosing names for variables, methods, classes, and packages.
-    * 1.3.2 Indentation: The number of spaces used to separate code blocks.
-    * 1.3.3 Comments: Text that explains the code and its purpose.
-    * 1.3.4 Declarations: Statements that define variables, methods, and classes.
-    * 1.3.5 Tasks: Actions or goals that must be performed.
+    - 1.3.1 Naming conventions: A set of rules for choosing names for variables, methods, classes, and packages.
+    - 1.3.2 Indentation: The number of spaces used to separate code blocks.
+    - 1.3.3 Comments: Text that explains the code and its purpose.
+    - 1.3.4 Declarations: Statements that define variables, methods, and classes.
+    - 1.3.5 Tasks: Actions or goals that must be performed.
 
-* 2.Coding Practices
+- [2.Coding Practices](#2-coding-practices)
 
   * 2.1 Naming Conventions
   
