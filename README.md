@@ -352,12 +352,52 @@ The objective of this project is to create a concise, easy-to-follow Java Code C
 
 # 6. Code Checking Process
 
-## 6.1 JUnit test
-  
-### 6.1.1 After creating a method, validate it with a JUnit test.
-    
-## 6.2 Full class test
-  
-### 6.2.2 After finishing a class, validate it with at least ten different scenarios.
+## 6.1 JUnit Test
+
+### 6.1.1 Validate methods with JUnit tests
+
+- **Correct**:
+  - You have written a method, `int add(int a, int b)`, in a class.
+  - You then write a JUnit test for this method:
+    ```java
+    @Test
+    public void testAdd() {
+        MyClass myClass = new MyClass();
+        assertEquals(5, myClass.add(2, 3));
+    }
+    ```
+
+- **Incorrect**:
+  - You have written a method, `int add(int a, int b)`, in a class.
+  - No corresponding JUnit test is written to validate the method.
+
+## 6.2 Full Class Test
+
+### 6.2.2 Validate a class with at least ten different scenarios
+
+- **Correct**:
+  - For a class `Calculator`, after fully implementing it, you write multiple JUnit tests covering a range of scenarios:
+    - Test adding positive numbers
+    - Test adding negative numbers
+    - Test adding a positive and a negative number
+    - Test multiplying numbers
+    - ... (more tests to cover at least ten different scenarios)
+
+  Each test would look like:
+  ```java
+  @Test
+  public void testAddPositiveNumbers() {
+      Calculator calc = new Calculator();
+      assertEquals(7, calc.add(3, 4));
+  }
+  // More tests follow...
+  ```
+
+- **Incorrect**:
+  - For a class `Calculator`, after implementation, only a couple of basic tests are written, not covering the range of functionality:
+    - Test adding two numbers
+    - Test subtracting two numbers
+
+  There are no tests for edge cases or various other scenarios, falling short of the ten different scenarios guideline.
 
 # 7. References
