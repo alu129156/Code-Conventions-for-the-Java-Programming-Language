@@ -131,7 +131,7 @@ The objective of this project is to create a concise, easy-to-follow Java Code C
 
 - [7. References](#7-references)
 
-# 1.Introduction
+# 1. Introduction
 
 ## 1.1 Purpose
   
@@ -149,7 +149,7 @@ The objective of this project is to create a concise, easy-to-follow Java Code C
 ### 1.3.4 Declarations: Statements that define variables, methods, and classes.
 ### 1.3.5 Tasks: Actions or goals that must be performed.
 
-# 2.Coding Practices
+# 2. Coding Practices
 
 ## 2.1 Naming Conventions
   
@@ -178,7 +178,7 @@ The objective of this project is to create a concise, easy-to-follow Java Code C
 ### 2.5.1 Data must be encapsulated in the properly classes. All attributes must be private, and it is needed getters and setters.
 ### 2.5.2 Correct use of error handling, using Java exceptions.
 
-# 3.Readability
+# 3. Readability
 
 ## 3.1 Naming Conventions
   
@@ -203,7 +203,7 @@ The objective of this project is to create a concise, easy-to-follow Java Code C
   
 ### 3.5.1 Ensure that the code must be interpreted in a clear and easy way for all the developers.
 
-# 4.Consistency
+# 4. Consistency
 
 ## 4.1 Naming Conventions
   
@@ -249,7 +249,7 @@ The objective of this project is to create a concise, easy-to-follow Java Code C
   
 ### 5.5.1 Use the path class to have an optimal and automatised access for OS tasks in the code.
 
-# 6.Code Checking Process
+# 6. Code Checking Process
 
 ## 6.1 JUnit test
   
@@ -259,4 +259,4 @@ The objective of this project is to create a concise, easy-to-follow Java Code C
   
 ### 6.2.2 After finishing a class, validate it with at least ten different scenarios.
 
-# 7.References
+# 7. References
