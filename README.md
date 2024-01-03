@@ -48,30 +48,30 @@ The objective of this project is to create a concise, easy-to-follow Java Code C
     - 2.5.1 Data must be encapsulated in the properly classes. All attributes must be private, and it is needed getters and setters.
     - 2.5.2 Correct use of error handling, using Java exceptions.
 
-* 3.Readability
+- [3. Readability](#3-readibility)
 
-  * 3.1 Naming Conventions
+  - [3.1 Naming Conventions](#31-naming-conventions)
   
-    * 3.1.1 Use meaningful names for variables, methods, classes, and packages.
-    * 3.1.2 Avoid using abbreviations or acronyms.
+    - 3.1.1 Use meaningful names for variables, methods, classes, and packages.
+    - 3.1.2 Avoid using abbreviations or acronyms.
     
-  * 3.2 Indentation
+  - [3.2 Indentation](#32-indentation)
   
-    * 3.2.1 Use consistent indentation throughout the code.
+    - 3.2.1 Use consistent indentation throughout the code.
     
-  * 3.3 Comments
+  - [3.3 Comments](#33-comments)
   
-    * 3.3.1 Use comments to explain the purpose of the code.
-    * 3.3.2 Use Javadoc comments to document classes, methods, and interfaces.
+    - 3.3.1 Use comments to explain the purpose of the code.
+    - 3.3.2 Use Javadoc comments to document classes, methods, and interfaces.
     
-  * 3.4 Declarations
-  
-    * 3.4.1 Declare variables with the appropriate data type.
-    * 3.4.2 Use meaningful names for variables.
+  - [3.4 Declarations](#34-declarations)
+
+    - 3.4.1 Declare variables with the appropriate data type.
+    - 3.4.2 Use meaningful names for variables.
     
-  * 3.5 Tasks
+  - [3.5 Tasks](#35-tasks)
   
-    * 3.5.1 Ensure that the code must be interpreted in a clear and easy way for all the developers.
+    - 3.5.1 Ensure that the code must be interpreted in a clear and easy way for all the developers.
 
 * 4.Consistency
 
