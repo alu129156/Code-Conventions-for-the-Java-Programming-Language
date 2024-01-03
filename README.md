@@ -1,7 +1,7 @@
 # Code-Conventions-for-the-Java-Programming-Language
 The objective of this project is to create a concise, easy-to-follow Java Code Conventions guide to standardise coding practices, enhance readability, and improve collaboration among Java developers.
 
-- [1.Introduction](#1-introduction)
+- [1. Introduction](#1-introduction)
 
   - [1.1 Purpose](#11-purpose)
   
@@ -19,34 +19,34 @@ The objective of this project is to create a concise, easy-to-follow Java Code C
     - 1.3.4 Declarations: Statements that define variables, methods, and classes.
     - 1.3.5 Tasks: Actions or goals that must be performed.
 
-- [2.Coding Practices](#2-coding-practices)
+- [2. Coding Practices](#2-coding-practices)
 
-  * 2.1 Naming Conventions
+  - [2.1 Naming Conventions](#21-naming-conventions)
   
     * 2.1.1 Use descriptive names for variables, methods, classes, and packages.
     * 2.1.2 Follow the camelCase naming convention for variables and methods.
     * 2.1.3 Follow the PascalCase naming convention for classes and interfaces.
     * 2.1.4 Use all caps for constants.
     
-  * 2.2 Indentation
+  - [2.2 Indentation](#22-indentation)
   
-    * 2.2.1 Use 4 spaces for indentation.
-    * 2.2.2 Do not use tabs for indentation.
+    - 2.2.1 Use 4 spaces for indentation.
+    - 2.2.2 Do not use tabs for indentation.
     
-  * 2.3 Comments
+  - [2.3 Comments](#23-comments)
   
-    * 2.3.1 Use comments to explain the purpose of the code.
-    * 2.3.2 Use Javadoc comments to document classes, methods, and interfaces.
+    - 2.3.1 Use comments to explain the purpose of the code.
+    - 2.3.2 Use Javadoc comments to document classes, methods, and interfaces.
     
-  * 2.4 Declarations
+  - [2.4 Declarations](#24-declarations)
   
-    * 2.4.1 Declare variables at the beginning of the block.
-    * 2.4.2 Declare one variable per line.
+    - 2.4.1 Declare variables at the beginning of the block.
+    - 2.4.2 Declare one variable per line.
     
-  * 2.5 Tasks
+  - [2.5 Tasks](#25-tasks)
   
-    * 2.5.1 Data must be encapsulated in the properly classes. All attributes must be private, and it is needed getters and setters.
-    * 2.5.2 Correct use of error handling, using Java exceptions.
+    - 2.5.1 Data must be encapsulated in the properly classes. All attributes must be private, and it is needed getters and setters.
+    - 2.5.2 Correct use of error handling, using Java exceptions.
 
 * 3.Readability
 
