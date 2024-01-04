@@ -129,7 +129,8 @@ The objective of this project is to create a concise, easy-to-follow Java Code C
   
     - 6.2.2 After finishing a class, validate it with at least ten different scenarios.
 
-- [7. References](#7-references)
+- [7. Tools for Code Conventions Maintenance](#7-tools-for-code-conventions-maintenance)
+- [8. References](#8-references)
 
 # 1. Introduction
 
@@ -309,46 +310,262 @@ The objective of this project is to create a concise, easy-to-follow Java Code C
 ## 4.1 Naming Conventions
   
 ### 4.1.1 Use consistent naming conventions throughout the code.
+```java
+// Example of consistent naming conventions
+public class Student {
+    private String studentName;
+    private int studentAge;
+    private double studentGPA;
+
+    public Student(String name, int age, double gpa) {
+        this.studentName = name;
+        this.studentAge = age;
+        this.studentGPA = gpa;
+    }
+
+    // Methods follow the same naming convention
+    public void updateName(String newName) {
+        studentName = newName;
+    }
+
+    public void updateAge(int newAge) {
+        studentAge = newAge;
+    }
+
+    public void updateGPA(double newGPA) {
+        studentGPA = newGPA;
+    }
+}
+```
     
 ## 4.2 Indentation
   
 ### 4.2.1 Use consistent indentation throughout the code.
+```java
+// Example of consistent indentation
+public class Calculator {
+    public int add(int a, int b) {
+        return a + b;
+    }
+
+    public int subtract(int a, int b) {
+        return a - b;
+    }
+
+    public int multiply(int a, int b) {
+        return a * b;
+    }
+
+    public double divide(int a, int b) {
+        return (double) a / b;
+    }
+}
+```
     
 ## 4.3 Comments
   
 ### 4.3.1 Use comments to explain the purpose of the code.
+```java
+// This class provides basic arithmetic operations
+public class ArithmeticOperations {
+
+    // Adds two integers
+    public int add(int a, int b) {
+        return a + b;
+    }
+
+    // Subtracts the second integer from the first
+    public int subtract(int a, int b) {
+        return a - b;
+    }
+}
+```
 ### 4.3.2 Use Javadoc comments to document classes, methods, and interfaces.
+```java
+/**
+ * Represents a basic calculator.
+ * Provides methods to perform arithmetic operations.
+ */
+public class BasicCalculator {
+
+    /**
+     * Adds two integers.
+     *
+     * @param a First operand
+     * @param b Second operand
+     * @return Sum of a and b
+     */
+    public int add(int a, int b) {
+        return a + b;
+    }
+}
+```
     
 ## 4.4 Declarations
   
 ### 4.4.1 Declare variables with the appropriate data type.
+```java
+public class UserData {
+    // Correct data type for each variable
+    private String username;
+    private int age;
+    private double balance;
+}
+```
 ### 4.4.2 Use meaningful names for variables.
+```java
+public class WeatherData {
+    // Meaningful variable names
+    private double temperatureInCelsius;
+    private double windSpeedInKmH;
+    private double rainfallInMm;
+}
+```
     
 ## 4.5 Tasks
   
 ### 4.5.1 Ensure that all the variables, methods and classes are consistent and do not give contradictions in the different parts of the code.
+```java
+public class BankAccount {
+    private double accountBalance; // Consistent naming
+
+    public BankAccount(double initialBalance) {
+        this.accountBalance = initialBalance; // Consistency in variable usage
+    }
+
+    // Method names and functionality are consistent
+    public void deposit(double amount) {
+        accountBalance += amount;
+    }
+
+    public void withdraw(double amount) {
+        if (amount <= accountBalance) {
+            accountBalance -= amount;
+        }
+    }
+}
+```
 
 # 5. Java classes
    
 ## 5.1 Threads
   
 ### 5.1.1 Use multithreading for asynchronous and costly tasks like I/O or Database connections.
+```java
+public class FileProcessor implements Runnable {
+    private String filePath;
+
+    public FileProcessor(String filePath) {
+        this.filePath = filePath;
+    }
+
+    @Override
+    public void run() {
+        // Simulate a costly I/O operation
+        System.out.println("Processing file: " + filePath);
+        // File processing logic goes here
+    }
+
+    public static void main(String[] args) {
+        Thread thread1 = new Thread(new FileProcessor("file1.txt"));
+        Thread thread2 = new Thread(new FileProcessor("file2.txt"));
+
+        thread1.start();
+        thread2.start();
+    }
+}
+```
     
 ## 5.2 Collection
   
 ### 5.2.1 Use sets, ArrayLists and Hash Maps to have more optimized and clean code.
+```java
+import java.util.*;
+
+public class CollectionExamples {
+    public static void main(String[] args) {
+        // ArrayList
+        List<String> names = new ArrayList<>();
+        names.add("Alice");
+        names.add("Bob");
+
+        // HashSet
+        Set<Integer> uniqueNumbers = new HashSet<>();
+        uniqueNumbers.add(1);
+        uniqueNumbers.add(2);
+
+        // HashMap
+        Map<String, Integer> ageMap = new HashMap<>();
+        ageMap.put("Alice", 30);
+        ageMap.put("Bob", 35);
+
+        System.out.println("Names: " + names);
+        System.out.println("Unique Numbers: " + uniqueNumbers);
+        System.out.println("Ages: " + ageMap);
+    }
+}
+```
     
 ## 5.3 Sorting Algorithms
   
 ### 5.3.1 Use the java sorting algorithm library to reduce the code complexity.
+```java
+import java.util.Arrays;
+
+public class SortingExample {
+    public static void main(String[] args) {
+        int[] numbers = {3, 1, 4, 1, 5, 9};
+        Arrays.sort(numbers);
+        System.out.println("Sorted Numbers: " + Arrays.toString(numbers));
+    }
+}
+```
     
 ## 5.4 Exception
   
 ### 5.4.1 Include exceptions in the code (also create own exceptions), to manage them properly in each class to identify easier the compilation errors.
+```java
+class UnderAgeException extends Exception {
+    public UnderAgeException(String message) {
+        super(message);
+    }
+}
+
+public class ExceptionHandling {
+    public static void main(String[] args) {
+        try {
+            validateAge(15);
+        } catch (UnderAgeException e) {
+            System.out.println("Caught Exception: " + e.getMessage());
+        }
+    }
+
+    static void validateAge(int age) throws UnderAgeException {
+        if (age < 18) {
+            throw new UnderAgeException("Age is less than 18");
+        }
+        System.out.println("Valid age");
+    }
+}
+```
     
 ## 5.5 Paths
   
 ### 5.5.1 Use the path class to have an optimal and automatised access for OS tasks in the code.
+```java
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+public class PathExample {
+    public static void main(String[] args) {
+        Path path = Paths.get("C:\\Users\\User\\Documents\\example.txt"); // In Windows
+        //Path path = Paths.get("/home/User/documents/example.txt") //On Linux/MacOS
+        System.out.println("File Name: " + path.getFileName());
+        System.out.println("Root Directory: " + path.getRoot());
+        System.out.println("Parent Directory: " + path.getParent());
+    }
+}
+```
 
 # 6. Code Checking Process
 
@@ -400,4 +617,7 @@ The objective of this project is to create a concise, easy-to-follow Java Code C
 
   There are no tests for edge cases or various other scenarios, falling short of the ten different scenarios guideline.
 
-# 7. References
+# 7. Tools for Code Conventions Maintenance
+(Add necessary index)
+
+# 8. References
