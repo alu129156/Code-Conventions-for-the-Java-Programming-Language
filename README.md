@@ -620,4 +620,91 @@ public class PathExample {
 # 7. Tools for Code Conventions Maintenance
 (Add necessary index)
 
+## Extensions for Integrated Development Environments (IDE) like Visual Studio or Eclipse
+
+- **Language Support for Java™ by Red Hat**
+  - Provides formatting settings that can be applied in Visual Studio Code.
+  - Supports exporting Eclipse formatter files for use in projects.
+  - Allows the application of formatter settings from existing profiles such as the Google Style.
+  - Offers an editor for editing and previewing formatter settings.
+
+- **Checkstyle for Java**
+  - Enables the use of existing Checkstyle configurations or custom files.
+  - Provides live linting and quick fixes during Java file editing.
+
+- **SonarLint**
+  - An extension that finds and fixes bugs and security issues in Java code.
+  - Runs in the background highlighting code issues and providing in-context guidance.
+  - Supports over 500 Java rules and includes quick fixes for certain quality issues.
+
+## Web & Desktop Tools
+
+- **Clang-Format**
+  - A tool that can create a list of style rules enable programmers to quickly reformat their code and create formatting checks that run on build servers to ensure compliance.
+  - It supports several coding standards including LLVM, Google, Chromium, Mozilla, and WebKit.
+
+- **Checkstyle** (also a linting tool so we will extend information later) 
+  - A tool to help write Java code adhering to a coding standard.
+  - Highly configurable, supporting standards like Sun Code Conventions and Google Java Style.
+  - Capable of checking class and method design, code layout, and formatting issues.
+  - Available for download from GitHub releases or Maven Central.
+  - Also a lightened version is integrable into build processes or development environments via plugins for various IDEs/build tools like Visual Studio, Eclipse, IntelliJ IDEA, Maven, Gradle, and more​​​​​​.
+
+
+- **Google Java Format**
+  - A program that reformats Java source code to comply with Google Java Style.
+  - Available for command-line use with options to act on whole files or specific parts.
+  - Integrations available for IntelliJ, Android Studio, Eclipse, Gradle, Maven, and more.
+  - Does not offer configurability in formatting algorithm, maintaining a unified format.
+
+## Linters [1]
+
+- **Checkstyle**
+  - A popular linter that checks Java source code for adherence to a code standard or set of validation rules.
+  - Regularly updated with thorough documentation and ample community support.
+  - Works natively with Ant and CLI and is available as a plugin for various IDEs and toolsets.
+  - Highly configurable XML-based config files to support workflows and production needs.
+
+- **PMD**
+  - A static code analyzer emphasizing Java but also supports other languages like JavaScript and Apex.
+  - Identifies common programming flaws such as unused variables, empty catch blocks, unnecessary object creation, and more.
+  - Features a copy-paste-detector (CPD) for identifying duplicated code across different languages.
+
+- **Error Prone**
+  - A tool designed for Java to find potential runtime errors without running the code.
+  - Supplements the compiler’s static type checker to catch common Java mistakes as compile-time errors.
+
+- **UCDetector (Unnecessary Code Detector)**
+  - Focuses on detecting “dead” code and marking classes for more restricted access modifiers.
+  - Useful for optimizing code privacy and preventing unintentional exposure of sensitive field members.
+
+- **Coala**
+  - Aims for flexibility and supports linting code in multiple languages including Java.
+  - Allows linting using a single config file suitable for multi-language environments.
+
+- **Ckjm**
+  - Calculates Chidamber and Kemerer object-oriented metrics by processing the bytecode of compiled Java files​​.
+
+- **Doop**
+  - A declarative framework for static analysis of Java/Android programs, focused on pointer analysis algorithms.
+  - Provides a wide variety of analyses and scaffolding to run analyses end-to-end​​.
+
+- **SpotBugs**
+  - The successor to FindBugs, SpotBugs is a static analysis tool to look for bugs in Java code​​.
+
+- **fb-contrib**
+  - A plugin for FindBugs and SpotBugs, offering additional bug detectors​​.
+
+- **JArchitect**
+  - Measures, queries, and visualizes Java code to avoid unexpected issues, technical debt, and complexity​​.
+
+‌- **NullAway** 
+  - A type-based null-pointer checker with low build-time overhead, acting as an Error Prone plugin​​.
+
+- **Qulice**
+  - Combines several pre-configured static analysis tools such as Checkstyle, PMD, and FindBugs​​.
+
+
+1. *A linter is a software tool used in programming to analyze source code for potential errors, bugs, stylistic errors, and suspicious constructs. The term "linter" originally referred to a program that analyzed C code, but now applies to similar tools for virtually any programming language. Linters perform static analysis, meaning they analyze the code without actually executing it. They help maintain code quality by enforcing coding standards and identifying potential problems like syntax errors, misuse of programming constructs, non-adherence to coding conventions, and potential performance issues. This makes them an essential tool in the software development process for improving and maintaining code quality.*
+
 # 8. References
