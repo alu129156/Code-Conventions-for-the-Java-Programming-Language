@@ -3,93 +3,104 @@ The objective of this project is to create a concise, easy-to-follow Java Code C
 
 - [1. Introduction](#1-introduction)
 
-  - [1.1 Purpose](#11-purpose)
+  - [1.1. Purpose](#11-purpose)
   
-    - 1.1.1 The purpose of this guide is to standardize coding practices, enhance readability, and improve collaboration among Java developers.
+    - 1.1.1. The purpose of this guide is to standardize coding practices, enhance readability, and improve collaboration among Java developers.
     
-  - [1.2 Scope](#12-scope)
+  - [1.2. Scope](#12-scope)
   
-    - 1.2.1 This guide applies to all Java code written by the development team.
+    - 1.2.1. This guide applies to all Java code written by the development team.
     
-  - [1.3 Definitions](#13-definitions)
+  - [1.3. Definitions](#13-definitions)
   
-    - 1.3.1 Naming conventions: A set of rules for choosing names for variables, methods, classes, and packages.
-    - 1.3.2 Indentation: The number of spaces used to separate code blocks.
-    - 1.3.3 Comments: Text that explains the code and its purpose.
-    - 1.3.4 Declarations: Statements that define variables, methods, and classes.
-    - 1.3.5 Tasks: Actions or goals that must be performed.
+    - 1.3.1. Naming conventions: A set of rules for choosing names for variables, methods, classes, and packages.
+    - 1.3.2. Indentation: The number of spaces used to separate code blocks.
+    - 1.3.3. Comments: Text that explains the code and its purpose.
+    - 1.3.4. Declarations: Statements that define variables, methods, and classes.
+    - 1.3.5. Tasks: Actions or goals that must be performed.
 
 - [2. Coding Practices](#2-coding-practices)
-  - [2.1 Naming Conventions](#21-naming-conventions)
-    - 2.1.1 Use descriptive and meaningful names
-    - 2.1.2 Follow camelCase for variables and methods
-    - 2.1.3 Follow PascalCase for classes and interfaces
-    - 2.1.4 Use all caps for constants
-    - 2.1.5 Avoid abreviations or acronyms
-  - [2.2 Indentation](#22-indentation)
-    - 2.2.1 Use 4 pages for indentation
-    - 2.2.2 Use consistent indentation
+  - [2.1. Naming Conventions](#21-naming-conventions)
+    - 2.1.1. Use descriptive and meaningful names
+    - 2.1.2. Follow camelCase for variables and methods
+    - 2.1.3. Follow PascalCase for classes and interfaces
+    - 2.1.4. Use all caps for constants
+    - 2.1.5. Avoid abreviations or acronyms
+  - [2.2. Indentation](#22-indentation)
+    - 2.2.1. Use 4 pages for indentation
+    - 2.2.2. Use consistent indentation
   - [2.3. Comments]
+    - 2.3.1. Use comments to explain purpose
+    - 2.3.2. use Javadoc comments for documentation
+  - [2.4. Declarations](#24-declarations)
+    - 2.4.1. Declare variables at the beginning
+    - 2.4.2. Declare one variable per line
+    - 2.4.3. Declare variables with appropiate data type
+  - [2.5. Data Encapsulation and Error Handling](#data-encapsulation-and-error-handling)
+    - 2.5.1. Encapsulate data in classes
+    - 2.5.2. Use Java exceptions for error handling
+  - [2.6. Readiblity and Clarity](#26-readability-and-clarity)
+    - 2.6.1. Ensure clear and interpretable code        
 
-- [3. Consistency](#4-consistency)
+- [3. Consistency](#3-consistency)
 
-  - [3.1 Naming Conventions](#41-naming-conventions)
+  - [3.1. Naming Conventions](#31-naming-conventions)
   
-    - 3.1.1 Use consistent naming conventions throughout the code.
+    - 3.1.1. Use consistent naming conventions throughout the code.
     
-  - [3.2 Indentation](#42-indentation)
+  - [3.2. Indentation](#32-indentation)
   
-    - 3.2.1 Use consistent indentation throughout the code.
+    - 3.2.1. Use consistent indentation throughout the code.
     
-  - [3.3 Comments](#43-comments)
+  - [3.3. Comments](#33-comments)
   
-    - 3.3.1 Use comments to explain the purpose of the code.
-    - 3.3.2 Use Javadoc comments to document classes, methods, and interfaces.
+    - 3.3.1. Use comments to explain the purpose of the code.
+    - 3.3.2. Use Javadoc comments to document classes, methods, and interfaces.
     
-  - [3.4 Declarations](#44-declarations)
+  - [3.4. Declarations](#34-declarations)
   
-    - 3.4.1 Declare variables with the appropriate data type.
-    - 3.4.2 Use meaningful names for variables.
+    - 3.4.1. Declare variables with the appropriate data type.
+    - 3.4.2. Use meaningful names for variables.
     
-  - [3.5 Tasks](#45-tasks)
+  - [3.5. Tasks](#35-tasks)
   
-    - 3.5.1 Ensure that all the variables, methods and classes are consistent and do not give contradictions in the different parts of the code.
+    - 3.5.1. Ensure that all the variables, methods and classes are consistent and do not give contradictions in the different parts of the code.
 
-- [4. Java classes](#5-java-classes)
+- [4. Java classes](#4-java-classes)
    
-  - [4.1 Threads](#51-threads)
+  - [4.1. Threads](#41-threads)
   
-    - 4.1.1 Use multithreading for asynchronous and costly tasks like I/O or Database connections.
+    - 4.1.1. Use multithreading for asynchronous and costly tasks like I/O or Database connections.
     
-  - [4.2 Collection](#52-collection)
+  - [4.2. Collection](#42-collection)
   
-    - 4.2.1 Use sets, ArrayLists and Hash Maps to have more optimized and clean code.
+    - 4.2.1. Use sets, ArrayLists and Hash Maps to have more optimized and clean code.
     
-  - [4.3 Sorting Algorithms](#53-sorting-algorithms)
+  - [4.3. Sorting Algorithms](#43-sorting-algorithms)
   
-    - 4.3.1 Use the java sorting algorithm library to reduce the code complexity.
+    - 4.3.1. Use the java sorting algorithm library to reduce the code complexity.
     
-  - [4.4 Exception](#54-exception)
+  - [4.4. Exception](#44-exception)
   
-    - 4.4.1 Include exceptions in the code (also create own exceptions), to manage them properly in each class to identify easier the compilation errors.
+    - 4.4.1. Include exceptions in the code (also create own exceptions), to manage them properly in each class to identify easier the compilation errors.
     
-  - [4.5 Paths](#55-paths)
+  - [4.5. Paths](#45-paths)
   
-    - 4.5.1 Use the path class to have an optimal and automatised access for OS tasks in the code.
+    - 4.5.1. Use the path class to have an optimal and automatised access for OS tasks in the code.
 
-- [5. Code Checking Process](#6-code-checking-process)
+- [5. Code Checking Process](#5-code-checking-process)
 
-  - [5.1 JUnit test](#61-junit-test)
+  - [5.1. JUnit test](#51-junit-test)
   
-    - 5.1.1 After creating a method, validate it with a JUnit test.
+    - 5.1.1. After creating a method, validate it with a JUnit test.
     
-  - [5.2 Full class test](#62-full-class-test)
+  - [5.2. Full class test](#52-full-class-test)
   
-    - 5.2.2 After finishing a class, validate it with at least ten different scenarios.
+    - 5.2.2. After finishing a class, validate it with at least ten different scenarios.
 
-- [6. Tools for Code Conventions Maintenance](#7-tools-for-code-conventions-maintenance)
-  -    
-- [7. References](#8-references)
+- [6. Tools for Code Conventions Maintenance](#6-tools-for-code-conventions-maintenance)
+  - [6.1. ]    
+- [7. References](#7-references)
 
 # 1. Introduction
 
@@ -260,11 +271,11 @@ The objective of this project is to create a concise, easy-to-follow Java Code C
 - **Incorrect**: Code that is hard to read due to lack of comments, poor naming, inconsistent indentation, and convoluted logic.
 
 
-# 4. Consistency
+# 3. Consistency
 
-## 4.1 Naming Conventions
+## 3.1 Naming Conventions
   
-### 4.1.1 Use consistent naming conventions throughout the code.
+### 3.1.1 Use consistent naming conventions throughout the code.
 ```java
 // Example of consistent naming conventions
 public class Student {
@@ -293,9 +304,9 @@ public class Student {
 }
 ```
     
-## 4.2 Indentation
+## 3.2 Indentation
   
-### 4.2.1 Use consistent indentation throughout the code.
+### 3.2.1 Use consistent indentation throughout the code.
 ```java
 // Example of consistent indentation
 public class Calculator {
@@ -317,9 +328,9 @@ public class Calculator {
 }
 ```
     
-## 4.3 Comments
+## 3.3 Comments
   
-### 4.3.1 Use comments to explain the purpose of the code.
+### 3.3.1 Use comments to explain the purpose of the code.
 ```java
 // This class provides basic arithmetic operations
 public class ArithmeticOperations {
@@ -335,7 +346,7 @@ public class ArithmeticOperations {
     }
 }
 ```
-### 4.3.2 Use Javadoc comments to document classes, methods, and interfaces.
+### 3.3.2 Use Javadoc comments to document classes, methods, and interfaces.
 ```java
 /**
  * Represents a basic calculator.
@@ -356,9 +367,9 @@ public class BasicCalculator {
 }
 ```
     
-## 4.4 Declarations
+## 3.4 Declarations
   
-### 4.4.1 Declare variables with the appropriate data type.
+### 3.4.1 Declare variables with the appropriate data type.
 ```java
 public class UserData {
     // Correct data type for each variable
@@ -367,7 +378,7 @@ public class UserData {
     private double balance;
 }
 ```
-### 4.4.2 Use meaningful names for variables.
+### 3.4.2 Use meaningful names for variables.
 ```java
 public class WeatherData {
     // Meaningful variable names
@@ -377,9 +388,9 @@ public class WeatherData {
 }
 ```
     
-## 4.5 Tasks
+## 3.5 Tasks
   
-### 4.5.1 Ensure that all the variables, methods and classes are consistent and do not give contradictions in the different parts of the code.
+### 3.5.1 Ensure that all the variables, methods and classes are consistent and do not give contradictions in the different parts of the code.
 ```java
 public class BankAccount {
     private double accountBalance; // Consistent naming
@@ -401,11 +412,11 @@ public class BankAccount {
 }
 ```
 
-# 5. Java classes
+# 4. Java classes
    
-## 5.1 Threads
+## 4.1 Threads
   
-### 5.1.1 Use multithreading for asynchronous and costly tasks like I/O or Database connections.
+### 4.1.1 Use multithreading for asynchronous and costly tasks like I/O or Database connections.
 ```java
 public class FileProcessor implements Runnable {
     private String filePath;
@@ -431,9 +442,9 @@ public class FileProcessor implements Runnable {
 }
 ```
     
-## 5.2 Collection
+## 4.2 Collection
   
-### 5.2.1 Use sets, ArrayLists and Hash Maps to have more optimized and clean code.
+### 4.2.1 Use sets, ArrayLists and Hash Maps to have more optimized and clean code.
 ```java
 import java.util.*;
 
@@ -461,9 +472,9 @@ public class CollectionExamples {
 }
 ```
     
-## 5.3 Sorting Algorithms
+## 4.3 Sorting Algorithms
   
-### 5.3.1 Use the java sorting algorithm library to reduce the code complexity.
+### 4.3.1 Use the java sorting algorithm library to reduce the code complexity.
 ```java
 import java.util.Arrays;
 
@@ -476,9 +487,9 @@ public class SortingExample {
 }
 ```
     
-## 5.4 Exception
+## 4.4 Exception
   
-### 5.4.1 Include exceptions in the code (also create own exceptions), to manage them properly in each class to identify easier the compilation errors.
+### 4.4.1 Include exceptions in the code (also create own exceptions), to manage them properly in each class to identify easier the compilation errors.
 ```java
 class UnderAgeException extends Exception {
     public UnderAgeException(String message) {
@@ -504,9 +515,9 @@ public class ExceptionHandling {
 }
 ```
     
-## 5.5 Paths
+## 4.5 Paths
   
-### 5.5.1 Use the path class to have an optimal and automatised access for OS tasks in the code.
+### 4.5.1 Use the path class to have an optimal and automatised access for OS tasks in the code.
 ```java
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -522,11 +533,11 @@ public class PathExample {
 }
 ```
 
-# 6. Code Checking Process
+# 5. Code Checking Process
 
-## 6.1 JUnit Test
+## 5.1 JUnit Test
 
-### 6.1.1 Validate methods with JUnit tests
+### 5.1.1 Validate methods with JUnit tests
 
 - **Correct**:
   - You have written a method, `int add(int a, int b)`, in a class.
@@ -543,9 +554,9 @@ public class PathExample {
   - You have written a method, `int add(int a, int b)`, in a class.
   - No corresponding JUnit test is written to validate the method.
 
-## 6.2 Full Class Test
+## 5.2 Full Class Test
 
-### 6.2.2 Validate a class with at least ten different scenarios
+### 5.2.2 Validate a class with at least ten different scenarios
 
 - **Correct**:
   - For a class `Calculator`, after fully implementing it, you write multiple JUnit tests covering a range of scenarios:
@@ -572,91 +583,89 @@ public class PathExample {
 
   There are no tests for edge cases or various other scenarios, falling short of the ten different scenarios guideline.
 
-# 7. Tools for Code Conventions Maintenance
-(Add necessary index)
+# 6. Tools for Code Conventions Maintenance
 
-## 7.1 Extensions for Integrated Development Environments (IDE) like Visual Studio or Eclipse
+## 6.1. Extensions for Integrated Development Environments (IDE) like Visual Studio or Eclipse
 
-- **Language Support for Java™ by Red Hat**
+### 6.1.1. Language Support for Java™ by Red Hat
   - Provides formatting settings that can be applied in Visual Studio Code.
   - Supports exporting Eclipse formatter files for use in projects.
   - Allows the application of formatter settings from existing profiles such as the Google Style.
   - Offers an editor for editing and previewing formatter settings.
 
-- **Checkstyle for Java**
+### 6.1.2. Checkstyle for Java
   - Enables the use of existing Checkstyle configurations or custom files.
   - Provides live linting and quick fixes during Java file editing.
 
-- **SonarLint**
+### 6.1.3. SonarLint
   - An extension that finds and fixes bugs and security issues in Java code.
   - Runs in the background highlighting code issues and providing in-context guidance.
   - Supports over 500 Java rules and includes quick fixes for certain quality issues.
 
-## 7.2 Web & Desktop Tools
+## 6.2. Web & Desktop Tools
 
-- **Clang-Format**
+### 6.2.1. Clang-Format
   - A tool that can create a list of style rules enable programmers to quickly reformat their code and create formatting checks that run on build servers to ensure compliance.
   - It supports several coding standards including LLVM, Google, Chromium, Mozilla, and WebKit.
 
-- **Checkstyle** (also a linting tool so we will extend information later) 
+### 6.2.2. Checkstyle (also a linting tool so we will extend information later) 
   - A tool to help write Java code adhering to a coding standard.
   - Highly configurable, supporting standards like Sun Code Conventions and Google Java Style.
   - Capable of checking class and method design, code layout, and formatting issues.
   - Available for download from GitHub releases or Maven Central.
   - Also a lightened version is integrable into build processes or development environments via plugins for various IDEs/build tools like Visual Studio, Eclipse, IntelliJ IDEA, Maven, Gradle, and more​​​​​​.
 
-
-- **Google Java Format**
+### 6.2.3. Google Java Format
   - A program that reformats Java source code to comply with Google Java Style.
   - Available for command-line use with options to act on whole files or specific parts.
   - Integrations available for IntelliJ, Android Studio, Eclipse, Gradle, Maven, and more.
   - Does not offer configurability in formatting algorithm, maintaining a unified format.
 
-## 7.3 Linters [1]
+## 6.3. Linters [1]
 
-- **Checkstyle**
+### 6.3.1. Checkstyle
   - A popular linter that checks Java source code for adherence to a code standard or set of validation rules.
   - Regularly updated with thorough documentation and ample community support.
   - Works natively with Ant and CLI and is available as a plugin for various IDEs and toolsets.
   - Highly configurable XML-based config files to support workflows and production needs.
 
-- **PMD**
+### 6.3.2. PMD
   - A static code analyzer emphasizing Java but also supports other languages like JavaScript and Apex.
   - Identifies common programming flaws such as unused variables, empty catch blocks, unnecessary object creation, and more.
   - Features a copy-paste-detector (CPD) for identifying duplicated code across different languages.
 
-- **Error Prone**
+### 6.3.3. Error Prone
   - A tool designed for Java to find potential runtime errors without running the code.
   - Supplements the compiler’s static type checker to catch common Java mistakes as compile-time errors.
 
-- **UCDetector (Unnecessary Code Detector)**
+### 6.3.4. UCDetector (Unnecessary Code Detector
   - Focuses on detecting “dead” code and marking classes for more restricted access modifiers.
   - Useful for optimizing code privacy and preventing unintentional exposure of sensitive field members.
 
-- **Coala**
+### 6.3.5. Coala
   - Aims for flexibility and supports linting code in multiple languages including Java.
   - Allows linting using a single config file suitable for multi-language environments.
 
-- **Ckjm**
+### 6.3.6. Ckjm
   - Calculates Chidamber and Kemerer object-oriented metrics by processing the bytecode of compiled Java files​​.
 
-- **Doop**
+### 6.3.7. Doop
   - A declarative framework for static analysis of Java/Android programs, focused on pointer analysis algorithms.
   - Provides a wide variety of analyses and scaffolding to run analyses end-to-end​​.
 
-- **SpotBugs**
+### 6.3.8. SpotBugs
   - The successor to FindBugs, SpotBugs is a static analysis tool to look for bugs in Java code​​.
 
-- **fb-contrib**
+### 6.3.9. fb-contrib
   - A plugin for FindBugs and SpotBugs, offering additional bug detectors​​.
 
-- **JArchitect**
+### 6.3.10. JArchitect
   - Measures, queries, and visualizes Java code to avoid unexpected issues, technical debt, and complexity​​.
 
-‌- **NullAway** 
+### 6.3.11. NullAway 
   - A type-based null-pointer checker with low build-time overhead, acting as an Error Prone plugin​​.
 
-- **Qulice**
+### 6.3.12. Qulice
   - Combines several pre-configured static analysis tools such as Checkstyle, PMD, and FindBugs​​.
 
 
