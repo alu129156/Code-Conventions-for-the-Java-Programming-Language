@@ -15,7 +15,7 @@ The objective of this project is to create a concise, easy-to-follow Java Code C
   - [2.2. Indentation](#22-indentation)
     - 2.2.1. Use 4 pages for indentation
     - 2.2.2. Use consistent indentation
-  - [2.3. Comments]
+  - [2.3. Comments](#23-comments)
     - 2.3.1. Use comments to explain purpose
     - 2.3.2. use Javadoc comments for documentation
   - [2.4. Declarations](#24-declarations)
