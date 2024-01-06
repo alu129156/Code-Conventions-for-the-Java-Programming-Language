@@ -646,4 +646,10 @@ public class PathExample {
 
 1. *A linter is a software tool used in programming to analyze source code for potential errors, bugs, stylistic errors, and suspicious constructs. The term "linter" originally referred to a program that analyzed C code, but now applies to similar tools for virtually any programming language. Linters perform static analysis, meaning they analyze the code without actually executing it. They help maintain code quality by enforcing coding standards and identifying potential problems like syntax errors, misuse of programming constructs, non-adherence to coding conventions, and potential performance issues. This makes them an essential tool in the software development process for improving and maintaining code quality.*
 
-# 8. References
+# 7. References
+1. [Clean Code: A Handbook of Agile Software Craftsmanship (Robert C. Martin Series)](#https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
+2. ["Clean Coding in Java", Baeldung.](#https://www.baeldung.com/java-clean-code)
+3. ["The ARt of Clean Code: Java Style and Conventions", DEV](#https://dev.to/alphaaman/the-art-of-clean-code-java-style-and-conventions-193h)
+4. ["Google Java Style Guide", Google](#https://google.github.io/styleguide/javaguide.html)
+5. ["Java best practices: Writing clean and maintainable code", Reintech Media](#https://reintech.io/blog/java-best-practices-writing-clean-maintainable-code)
+6. ["Whate are the most used Java coding standards?", IToolkit](#https://itoolkit.co/blog/2023/08/what-are-the-most-used-java-coding-standards/)
