@@ -13,7 +13,7 @@ The objective of this project is to create a concise, easy-to-follow Java Code C
     - 2.1.4. Use all caps for constants
     - 2.1.5. Avoid abreviations or acronyms
   - [2.2. Indentation](#22-indentation)
-    - 2.2.1. Use 4 pages for indentation
+    - 2.2.1. Use 4 pages or a tab for indentation
     - 2.2.2. Use consistent indentation
   - [2.3. Comments](#23-comments)
     - 2.3.1. Use comments to explain purpose
@@ -89,7 +89,7 @@ The objective of this project is to create a concise, easy-to-follow Java Code C
 
 ## 1.1 Purpose
   
-The purpose of this guide is to standardize coding practices, enhance readability, and improve collaboration among Java developers.
+The purpose of this guide is to standardise coding practices, enhance readability, and improve collaboration among Java developers.
     
 ## 1.2 Scope
   
