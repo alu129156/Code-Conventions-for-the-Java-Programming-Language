@@ -2,22 +2,8 @@
 The objective of this project is to create a concise, easy-to-follow Java Code Conventions guide to standardise coding practices, enhance readability, and improve collaboration among Java developers.
 
 - [1. Introduction](#1-introduction)
-
   - [1.1. Purpose](#11-purpose)
-  
-    - 1.1.1. The purpose of this guide is to standardize coding practices, enhance readability, and improve collaboration among Java developers.
-    
   - [1.2. Scope](#12-scope)
-  
-    - 1.2.1. This guide applies to all Java code written by the development team.
-    
-  - [1.3. Definitions](#13-definitions)
-  
-    - 1.3.1. Naming conventions: A set of rules for choosing names for variables, methods, classes, and packages.
-    - 1.3.2. Indentation: The number of spaces used to separate code blocks.
-    - 1.3.3. Comments: Text that explains the code and its purpose.
-    - 1.3.4. Declarations: Statements that define variables, methods, and classes.
-    - 1.3.5. Tasks: Actions or goals that must be performed.
 
 - [2. Coding Practices](#2-coding-practices)
   - [2.1. Naming Conventions](#21-naming-conventions)
@@ -36,89 +22,78 @@ The objective of this project is to create a concise, easy-to-follow Java Code C
     - 2.4.1. Declare variables at the beginning
     - 2.4.2. Declare one variable per line
     - 2.4.3. Declare variables with appropiate data type
-  - [2.5. Data Encapsulation and Error Handling](#data-encapsulation-and-error-handling)
+  - [2.5. Data Encapsulation and Error Handling](#25-data-encapsulation-and-error-handling)
     - 2.5.1. Encapsulate data in classes
     - 2.5.2. Use Java exceptions for error handling
   - [2.6. Readiblity and Clarity](#26-readability-and-clarity)
     - 2.6.1. Ensure clear and interpretable code        
 
 - [3. Consistency](#3-consistency)
-
   - [3.1. Naming Conventions](#31-naming-conventions)
-  
     - 3.1.1. Use consistent naming conventions throughout the code.
-    
   - [3.2. Indentation](#32-indentation)
-  
     - 3.2.1. Use consistent indentation throughout the code.
-    
   - [3.3. Comments](#33-comments)
-  
     - 3.3.1. Use comments to explain the purpose of the code.
     - 3.3.2. Use Javadoc comments to document classes, methods, and interfaces.
-    
   - [3.4. Declarations](#34-declarations)
-  
     - 3.4.1. Declare variables with the appropriate data type.
     - 3.4.2. Use meaningful names for variables.
-    
   - [3.5. Tasks](#35-tasks)
-  
     - 3.5.1. Ensure that all the variables, methods and classes are consistent and do not give contradictions in the different parts of the code.
-
+    
 - [4. Java classes](#4-java-classes)
-   
   - [4.1. Threads](#41-threads)
-  
     - 4.1.1. Use multithreading for asynchronous and costly tasks like I/O or Database connections.
-    
   - [4.2. Collection](#42-collection)
-  
     - 4.2.1. Use sets, ArrayLists and Hash Maps to have more optimized and clean code.
-    
   - [4.3. Sorting Algorithms](#43-sorting-algorithms)
-  
     - 4.3.1. Use the java sorting algorithm library to reduce the code complexity.
-    
   - [4.4. Exception](#44-exception)
-  
     - 4.4.1. Include exceptions in the code (also create own exceptions), to manage them properly in each class to identify easier the compilation errors.
-    
   - [4.5. Paths](#45-paths)
-  
     - 4.5.1. Use the path class to have an optimal and automatised access for OS tasks in the code.
 
 - [5. Code Checking Process](#5-code-checking-process)
-
   - [5.1. JUnit test](#51-junit-test)
-  
     - 5.1.1. After creating a method, validate it with a JUnit test.
-    
   - [5.2. Full class test](#52-full-class-test)
-  
     - 5.2.2. After finishing a class, validate it with at least ten different scenarios.
 
 - [6. Tools for Code Conventions Maintenance](#6-tools-for-code-conventions-maintenance)
-  - [6.1. ]    
+  - [6.1. Extensions for Integrated Development Environments (IDE) like Visual Studio or Eclipse](#61-extensions-for-integrated-development-environments-(ide)-like-visual-studio-or-eclipse)
+    - 6.1.1. Language Support for Java by Red Hat
+    - 6.1.2. Checkstyle for Java
+    - 6.1.3. SonarLint
+  - [6.2. Web & Desktop Tools](#62-web-&-desktop-tools)
+    - 6.2.1. Clang-Format
+    - 6.2.2. Checkstyle (also a linting tool, more information later on)
+    - 6.2.3. Google Java Format
+  - [6.3. Linters](#63-linters)
+    - 6.3.1. Checkstyle
+    - 6.3.2. PMD
+    - 6.3.3. Error Prone
+    - 6.3.4. UCDetector (Unnecessary Code Detector)
+    - 6.3.5. Coala
+    - 6.3.6. Ckjm
+    - 6.3.7. Doop
+    - 6.3.8. SpotBugs
+    - 6.3.9. fb-contrib
+    - 6.3.10. JArchitect
+    - 6.3.11. NullAway
+    - 6.3.12. Qulice
+    
 - [7. References](#7-references)
 
 # 1. Introduction
 
 ## 1.1 Purpose
   
-### 1.1.1 The purpose of this guide is to standardize coding practices, enhance readability, and improve collaboration among Java developers.
+The purpose of this guide is to standardize coding practices, enhance readability, and improve collaboration among Java developers.
     
 ## 1.2 Scope
   
-### 1.2.1 This guide applies to all Java code written by the development team.
-    
-## 1.3 Definitions
-  
-### 1.3.1 Naming conventions: A set of rules for choosing names for variables, methods, classes, and packages.
-### 1.3.2 Indentation: The number of spaces used to separate code blocks.
-### 1.3.3 Comments: Text that explains the code and its purpose.
-### 1.3.4 Declarations: Statements that define variables, methods, and classes.
-### 1.3.5 Tasks: Actions or goals that must be performed.
+This guide applies to all Java code written by a development team.
 
 # 2 Coding Practices
 ## 2.1. Naming Conventions
@@ -608,7 +583,7 @@ public class PathExample {
   - A tool that can create a list of style rules enable programmers to quickly reformat their code and create formatting checks that run on build servers to ensure compliance.
   - It supports several coding standards including LLVM, Google, Chromium, Mozilla, and WebKit.
 
-### 6.2.2. Checkstyle (also a linting tool so we will extend information later) 
+### 6.2.2. Checkstyle (also a linting tool, more information later on) 
   - A tool to help write Java code adhering to a coding standard.
   - Highly configurable, supporting standards like Sun Code Conventions and Google Java Style.
   - Capable of checking class and method design, code layout, and formatting issues.
@@ -638,7 +613,7 @@ public class PathExample {
   - A tool designed for Java to find potential runtime errors without running the code.
   - Supplements the compiler’s static type checker to catch common Java mistakes as compile-time errors.
 
-### 6.3.4. UCDetector (Unnecessary Code Detector
+### 6.3.4. UCDetector (Unnecessary Code Detector)
   - Focuses on detecting “dead” code and marking classes for more restricted access modifiers.
   - Useful for optimizing code privacy and preventing unintentional exposure of sensitive field members.
 
